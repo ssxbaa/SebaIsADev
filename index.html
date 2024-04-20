@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>seba's bio</title>
+      <link rel="stylesheet" href="style.css" type="text/css">
+      <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+      <script src="script.js"></script>
+      <meta name="darkreader-lock">
+      <meta content="Seba's Bio" property="og:title"/>
+      <meta content="Why are you looking at my website? 👀" property="og:description"/>
+      <meta content="#b3aea1" data-react-helmet="true" name="theme-color"/>
+
+   </head>
+
+   <body>
+
+      <video id="background-video" loop muted autoplay playsinline>
+         <source src="assets/background.mp4">
+      </video>
+
+      <div class="container">
+
+         <div class="main">
+
+            <img id="icon" src="assets/pfp.png" draggable="false">
+
+            <h1>seba</h1>
+            <h4 style="margin-bottom: -20px;">a developer from <img src="assets/italy.png" width="18px" draggable="false">.</h4>
+            <h4>chase money, not bitches.</h4>
+
+            <div class="button-container">
+
+               <a class="button" id="github" onclick="openLink(this.id)">
+               <img src="assets/github.png" width="30px" draggable="false">
+               </a>
+
+               <a class="button" onclick="copyUsername()">
+               <img src="assets/discord.png" width="30px" draggable="false">
+               </a>
+
+               <a class="button" id="telegram" onclick="openLink(this.id)">
+               <img src="assets/telegram.png" width="30px" draggable="false">
+               </a>
+
+            </div>
+
+         </div>
+
+         <div id="alert">
+            <h4>❗️ ・ Ho copiato l'username!</h4>
+        </div>
+
+      </div>
+
+   </body>
+
+</html>
