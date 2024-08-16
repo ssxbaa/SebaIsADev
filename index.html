@@ -3,62 +3,125 @@
 
    <head>
 
+      <!-- Meta Tags -->
+
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Seba Is A Dev</title>
+      <meta name="darkreader-lock">
+      <title>seba.is-a.dev</title>
+
+      <!-- Imports -->
+
       <link rel="stylesheet" href="css/style.css" type="text/css">
+      <link rel="stylesheet" href="css/scrollbar.css" type="text/css">
+      <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
       <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-      <script src="js/script.js"></script>
-      <meta content="Seba Is A Dev" property="og:title"/>
-      <meta content="Why are you looking at my website? 👀" property="og:description"/>
-      <meta content="#31363f" data-react-helmet="true" name="theme-color"/>
-      <meta name="darkreader-lock">
+      <script src="js/getDiscordStatus.js"></script>
+
+      <!-- Embed -->
+
+      <meta content="Seba 🐊" property="og:title"/>
+      <meta content="Seba's Personal Website!" property="og:description"/>
+      <meta content="#8a00c4" data-react-helmet="true" name="theme-color"/>
 
    </head>
 
    <body>
 
-    <div id="main" class="container">
+    <div class="container">
 
-        <div class="block">
+        <div class="primary">
 
-            <img class="pfp" src="assets/pfp.png" draggable="false">
+            <div class="text">
+    
+                <h1>Seba</h1>
+                <p id="desc" style="margin-top: -20px;">
+                    "are you a 1 or a 0?" <br>
+                    16yo full stack dev from <img src="assets/flag.png" draggable="false">
+                </p>
+    
+                <a class="button" href="#contacts">
+                    Contact Me
+                </a>
+    
+            </div>
+    
+            <div class="pfp">
+    
+                <img src="assets/pfp.png" draggable="false">
+    
+            </div>
+    
+        </div>
 
-            <h1>seba &lt;/&gt;</h1>
+        <div class="skills">
 
-            <h4>
-                16yo full stack developer from <img src="assets/flag.png" width="18px" draggable="false">.
-                <br>
-                i turn coffee into code and muscles!
-            </h4>
+                <div class="title">
+
+                    <h1>My Skills</h1>
+
+                </div>
+
+                <div class="cards">
+                    
+                    <div class="card">
+                            <i class="devicon-html5-plain"></i>
+                            <h1>HTML</h1>
+                    </div>
+                    <div class="card">
+                        <i class="devicon-css3-plain"></i>
+                        <h1>CSS</h1>
+                    </div>
+                    <div class="card">
+                        <i class="devicon-javascript-plain"></i>
+                        <h1>JS</h1>
+                    </div>
+                    <div class="card">
+                        <i class="devicon-nodejs-plain-wordmark"></i>
+                        <h1>NodeJS</h1>
+                    </div>
+                    <div class="card">
+                        <i class="devicon-csharp-plain"></i>
+                        <h1>C#</h1>
+                    </div>
+                    <div class="card">
+                        <i class="devicon-linux-plain"></i>
+                        <h1>Linux</h1>
+                    </div>
+
+                </div>
 
         </div>
 
-        <br>
+        <div class="contacts">
+
+            <div class="title" id="contacts">
+
+                <h1>My Contacts</h1>
+
+            </div>
+
+            <div class="buttons">
+
+                <a class="button" href="https://github.com/ssxbaa" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a class="button" href="https://discord.com/users/1213198625610408046" target="_blank">
+                    <i class="bi bi-discord"></i>
+                </a>
+                <a class="button" href="https://t.me/insgamabile" target="_blank">
+                    <i class="bi bi-telegram"></i>
+                </a>
+
+            </div>
+            
+        </div>
+
+        <div class="footer">
+            <p>© <i class="bi bi-dot"></i> By ssxbaa <i class="bi bi-dot"></i> 2023 - <script>document.write(new Date().getFullYear());</script></p>
+        </div>
         
-        <div class="socialcontainer">
-
-            <a id="gh" class="button github" onclick="redirect(this.id)">
-                <i class="bi bi-github"></i>
-            </a>
-            <a class="button discord" onclick="copyUsername()">
-                <i class="bi bi-discord"></i>
-            </a>
-            <a id="tg" class="button telegram" onclick="redirect(this.id)">
-                <i class="bi bi-telegram"></i>
-            </a>
-
-        </div>
-
-
-        <a id="proj" class="projectsbutton" onclick="redirect(this.id)">
-            <img src="assets/dev.png" draggable="false">
-            <h4>
-                <i class="bi bi-dot"></i>Discover my Projects
-            </h4>
-        </a>
-
     </div>
 
    </body>
