@@ -1,0 +1,19 @@
+:root {
+
+    --main-clr: #8a00c4;
+    --neon-clr: #520075;
+    --paragraph-clr: #a600eb;
+
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #000; 
+}
+   
+::-webkit-scrollbar-thumb {
+    background: var(--neon-clr);
+}
