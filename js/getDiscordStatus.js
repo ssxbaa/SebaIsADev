@@ -1,5 +1,5 @@
-const sebaId = "1213198625610408046";
-const url = "https://api.lanyard.rest/v1/users/" + sebaId;
+var sebaId = "1213198625610408046";
+var url = "https://api.lanyard.rest/v1/users/" + sebaId;
 
 function fetchAndUpdate() {
 
