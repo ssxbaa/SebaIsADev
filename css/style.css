@@ -1,39 +1,31 @@
 /* Import Fonts */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 /* Actual CSS */
-
 * {
     scroll-behavior: smooth;
 }
 
 :root {
-
     /* Background Colors */
-
     --normal-bg: #0f0e0e;
     --light-bg: #dfdfdf;
     --normal-div: #0d0c0c;
 
     /* Text and Items Colors */
-    
     --main-clr: #8a00c4;
     --neon-clr: #520075;
     --paragraph-clr: #a600eb;
     --shadow-clr: rgba(0, 0, 0, 0.4);
 
     /* Status Colors */
-
     --online-clr: #22a559;
     --dnd-clr: #f23f43;
     --idle-clr: #f0b232;
     --offline-clr: #80848e;
-
 }
 
 div.primary {
-
     display: flex;
     flex-direction: row;
     width: auto;
@@ -45,7 +37,6 @@ div.primary {
     margin-top: 10vh;
 
     div.text {
-
         width: 250px;
         display: flex;
         flex-direction: column;
@@ -54,29 +45,22 @@ div.primary {
         h1 {
             font-size: 40px;
         }
-
     }
 
     div.pfp {
-
         display: flex;
         align-items: center;
         justify-content: center;
 
         img {
-
             width: 175px;
             border-radius: 50%;
             margin-top: 40px;
-            
         }
-
     }
 
     a.button {
-
         /* Button Styling */
-
         display: flex;
         align-items: center;
         justify-content: center;
@@ -89,43 +73,77 @@ div.primary {
         text-decoration: none;
 
         /* Font */
-
         font-family: "Poppins", sans-serif;
         font-weight: 400;
         font-style: normal;
         font-size: 18px;
 
         /* Transition */
-
         transition: ease-in;
         transition-duration: 150ms;
-
     }
 
     a.button:hover {
-
         /* Hover Changes */
-
         background-color: var(--paragraph-clr);
         color: #fff;
         box-shadow: 0px 0px 5px 5px var(--neon-clr);
 
         /* Font */
-
         font-family: "Poppins", sans-serif;
         font-weight: bold;
 
         /* Transition */
-
         transition: ease-in;
         transition-duration: 300ms;
-        
     }
-
 }
 
-div.skills {
+div.spotify {
+    display: none; /* Cambia a display: flex per visualizzare il contenitore */
+    flex-direction: row;
+    width: auto; /* Usa una larghezza fissa per il contenitore */
+    max-width: 450px;
+    height: 150px;
+    padding: 10px 25px;
+    border-radius: 25px;
+    background-color: var(--normal-div);
+    box-shadow: 0px 0px 20px 20px var(--shadow-clr);
+    gap: 20px;
+}
 
+div.spoti-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+
+    img {
+        width: 125px;
+        border-radius: 10px;
+    }
+}
+
+div.spoti-text {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Allineamento a sinistra */
+    white-space: nowrap !important; /* Impedisce il ritorno a capo */
+    overflow: hidden !important; /* Nasconde il testo che supera il contenitore */
+
+    a {
+        color: var(--paragraph-clr) !important;
+    }
+
+    span.controls {
+        font-size: 30px !important;
+    }
+}
+
+
+div.skills {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -137,14 +155,12 @@ div.skills {
     box-shadow: 0px 0px 20px 20px var(--shadow-clr);
 
     div.cards {
-
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
 
         div.card {
-
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -155,7 +171,7 @@ div.skills {
             height: 150px;
             width: 100px;
             border-radius: 15px;
-            margin: 20px 20px 20px 20px;
+            margin: 20px;
             padding-top: 10px;
             line-height: 0.8;
             cursor: pointer;
@@ -170,7 +186,6 @@ div.skills {
             h1 {
                 font-size: 20px;
             }
-
         }
 
         div.card:hover {
@@ -178,13 +193,10 @@ div.skills {
             transition: ease-in;
             transition-duration: 300ms;
         }
-
     }
-
 }
 
 div.contacts {
-
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -196,18 +208,14 @@ div.contacts {
     box-shadow: 0px 0px 20px 20px var(--shadow-clr);
 
     div.buttons {
-
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-
     }
 
     a.button {
-
         /* Button Styling */
-
         display: flex;
         align-items: center;
         justify-content: center;
@@ -220,54 +228,43 @@ div.contacts {
         text-decoration: none;
 
         /* Font */
-
         font-family: "Poppins", sans-serif;
         font-weight: 400;
         font-style: normal;
         font-size: 30px;
 
         /* Transition */
-
         transition: ease-in;
         transition-duration: 150ms;
-
     }
 
     a.button:hover {
-
         /* Hover Changes */
-
         background-color: var(--paragraph-clr);
         color: #fff;
         box-shadow: 0px 0px 5px 5px var(--neon-clr);
 
         /* Font */
-
         font-family: "Poppins", sans-serif;
         font-weight: bold;
 
         /* Transition */
-
         transition: ease-in;
         transition-duration: 300ms;
-        
     }
-
 }
 
 div.footer {
-
     display: flex;
     flex-direction: column;
     text-align: center;
     width: auto;
     height: auto;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 20px;
     border-radius: 25px;
     background-color: var(--normal-div);
     box-shadow: 0px 0px 20px 20px var(--shadow-clr);
     margin-bottom: 10vh;
-
 }
 
 div.container {
@@ -275,12 +272,11 @@ div.container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10vh;
+    gap: 6vh;
     min-height: 100vh;
 }
 
 body {
-
     margin: 0;
     padding: 0;
     background-color: var(--normal-bg);
@@ -303,11 +299,11 @@ body {
         font-family: "Poppins", sans-serif;
         font-weight: 400;
         font-style: normal;
+        
         img {
             width: 20px;
         }
     }
-
 }
 
 span {
@@ -335,9 +331,8 @@ span.offline {
 }
 
 @media only screen and (max-width: 500px) {
-
     body {
-      scale: 0.7;
+        scale: 0.7;
     }
 
     div.primary {
