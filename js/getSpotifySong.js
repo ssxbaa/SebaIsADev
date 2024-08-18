@@ -28,7 +28,7 @@ function pushSpotifySong() {
             imgDiv.appendChild(cover);
 
             let text = document.createElement("p");
-            text.innerHTML = `<span><a href="${songUrl}"><b>${song}</b></a></span></b><br>` +
+            text.innerHTML = `<span><a href="${songUrl}" target="_blank"><b>${song}</b></a></span></b><br>` +
                              `by <b><span>${artist}</span></b> <br>` +
                              `<span class="controls">${controls}</span>`;
 
