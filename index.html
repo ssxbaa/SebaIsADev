@@ -1,137 +1,273 @@
+<!--
+    seba.is-a.dev ©
+    https://github.com/ssxbaa ©
+    2025 - Present
+-->
+
 <!DOCTYPE html>
+
 <html lang="en">
 
-   <head>
+<head>
 
-      <!-- Meta Tags -->
+    <!-- Meta tags -->
 
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="darkreader-lock">
-      <title>seba.is-a.dev</title>
+    <meta charset="UTF-8">
+    <meta name="darkreader-lock">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <!-- Imports -->
+    <title>seba.is-a.dev ・ home</title>
 
-      <link rel="stylesheet" href="css/style.css" type="text/css">
-      <link rel="stylesheet" href="css/scrollbar.css" type="text/css">
-      <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-      <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-      <script src="js/getDiscordStatus.js"></script>
-      <script src="js/getSpotifySong.js"></script>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
 
-      <!-- Embed -->
+    <!-- Imports CSS -->
 
-      <meta content="Seba 🐊" property="og:title"/>
-      <meta content="Seba's Personal Website!" property="og:description"/>
-      <meta content="#8a00c4" data-react-helmet="true" name="theme-color"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-   </head>
+    <!-- Scripts JavaScript -->
 
-   <body>
+    <script src="js/script.js" type="module" defer></script>
+    <script src="js/listeners.js"></script>
+    <script src="js/functions.js"></script>
 
-    <div class="container">
+    <!-- Embed -->
 
-        <div class="primary">
+    <meta content="👨‍💻・Seba's Portfolio" property="og:title"/>
+    <meta content="Take a look at my portfolio!" property="og:description"/>
+    <meta content="#1c1c1c" data-react-helmet="true" name="theme-color"/>
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <div>
+                <h2>seba.is-a.dev</h2>
+            </div>
+
+            <div>
+                <a onclick="scrollToSection('#')" class="underline">About Me</a>
+                <a onclick="scrollToSection('career')" class="underline">Career</a>
+                <a onclick="scrollToSection('projects')" class="underline">Projects</a>
+                <a onclick="scrollToSection('contact')" class="underline">Contact</a>
+                
+            </div>
+
+        </nav>
+
+    </header>
+
+    <section id="about">
+
+        <div class="container">
 
             <div class="text">
-    
-                <h1>Seba</h1>
-                <p id="desc" style="margin-top: -20px;">
-                    "are you a 1 or a 0?" <br>
-                    17yo full stack dev from <img src="assets/flag.png" draggable="false">
-                </p>
-    
-                <a class="button" href="#contacts">
-                    Contact Me
-                </a>
-    
-            </div>
-    
-            <div class="pfp">
-    
-                <img src="assets/pfp.png" draggable="false">
-    
-            </div>
-    
-        </div>
 
-        <div class="spotify">
+                <h1>Sebastiano</h1>
+                <p>Hey <span id="wave">👋</span>, I am a <span id="typing"></span> <span id="cursor">&nbsp;</span></p>
+                <p>I'm <span id="age"></span> and still learning!</p>
 
-            <div class="spoti-img"></div>
-            <div class="spoti-text"></div>
+                <div class="buttons">
 
-        </div>
+                    <button class="styled" onclick="scrollToSection('career')">
+                        Let's start!
+                    </button>
 
-        <div class="skills">
-
-                <div class="title">
-
-                    <h1>My Skills</h1>
+                    <button class="styled" onclick="scrollToSection('contact')">
+                        Get in touch
+                    </button>
 
                 </div>
 
-                <div class="cards">
-                    
-                    <div class="card">
-                            <i class="devicon-html5-plain"></i>
-                            <h1>HTML</h1>
-                    </div>
-                    <div class="card">
-                        <i class="devicon-css3-plain"></i>
-                        <h1>CSS</h1>
-                    </div>
-                    <div class="card">
-                        <i class="devicon-javascript-plain"></i>
-                        <h1>JS</h1>
-                    </div>
-                    <div class="card">
-                        <i class="devicon-nodejs-plain-wordmark"></i>
-                        <h1>NodeJS</h1>
-                    </div>
-                    <div class="card">
-                        <i class="devicon-csharp-plain"></i>
-                        <h1>C#</h1>
-                    </div>
-                    <div class="card">
-                        <i class="devicon-linux-plain"></i>
-                        <h1>Linux</h1>
-                    </div>
-
-                </div>
-
-        </div>
-
-        <div class="contacts">
-
-            <div class="title" id="contacts">
-
-                <h1>My Contacts</h1>
-
             </div>
 
-            <div class="buttons">
+            <div class="image">
 
-                <a class="button" href="https://github.com/ssxbaa" target="_blank">
-                    <i class="bi bi-github"></i>
-                </a>
-                <a class="button" href="https://discord.com/users/1213198625610408046" target="_blank">
-                    <i class="bi bi-discord"></i>
-                </a>
-                <a class="button" href="https://t.me/insgamabile" target="_blank">
-                    <i class="bi bi-telegram"></i>
-                </a>
-
-            </div>
+                <img id="pfp" src="assets/pfp.png" draggable="false">
             
+            </div>
+
         </div>
 
-        <div class="footer">
-            <p>© <i class="bi bi-dot"></i> By ssxbaa <i class="bi bi-dot"></i> 2023 - <script>document.write(new Date().getFullYear());</script></p>
+    </section>
+
+    <section id="career">
+
+        <div class="section-title">
+
+            <h1>My Career Journey</h1>
+            <p>My journey in tech, shaped by key educational and professional milestones.</p>
+
         </div>
-        
+
+        <div class="timeline">
+
+            <div class="line"></div>  
+            <div class="points">
+                <i class="bi bi-circle-fill"></i>
+                <i class="bi bi-circle-fill"></i>
+                <i class="bi bi-circle-fill"></i>
+                <i class="bi bi-circle-fill"></i>
+            </div>
+
+            <div class="card left">
+                <div class="card-title">
+                    <i class="bi bi-flag-fill"></i> <h3>Start</h3>
+                </div>
+                <h6>2020</h6>
+                <p>I discovered my passion for programming when I was 12.</p>
+            </div>
+
+            <div class="card right">
+                <div class="card-title">
+                    <i class="bi bi-hammer"></i> <h3>First Steps</h3>
+                </div>
+                <h6>2020 - 2022</h6>
+                <p>I built my skills foundations starting with HTML, CSS and JavaScript.</p>
+            </div>
+
+            <div class="card left">
+                <div class="card-title">
+                    <i class="bi bi-backpack2-fill"></i> <h3>High School</h3>
+                </div>
+                <h6>2022 - 2027</h6>
+                <p>Attending an Accountancy and Computer Science course.</p>
+            </div>
+
+            <div class="card right">
+                <div class="card-title">
+                    <i class="bi bi-award-fill"></i> <h3>University</h3>
+                </div>
+                <h6>? - ?</h6>
+                <p>Looking forward to starting a Computer Science degree.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="projects">
+
+        <div class="section-title">
+
+            <h1>My Projects</h1>
+            <p>A showcase of some of the best projects that I've worked on as a developer.</p>
+            <p>Click on them to open their web page.</p>
+
+        </div>
+
+        <div class="projects-container">
+
+            <div class="project-card" onclick="redirect('https://top.gg/bot/711428816127393844')">
+
+                <div class="image">
+                    <img src="assets/projects_icons/luminova.png" class="icon" draggable="false">
+                </div>
+
+                <div class="text">
+                    <h4>Luminous Nova</h4>
+                    <h6>Nov. 2024 - Present</h6>
+                    <p>A wonderful Discord Bot with 50M users worldwide.</p>
+                </div>
+
+            </div>
+
+            <div class="project-card" onclick="redirect('https://github.com/ssxbaa/EzDiscordBot')">
+                
+                <div class="image">
+                    <img src="assets/projects_icons/github.png" class="icon" draggable="false">
+                </div>
+
+                <div class="text">
+                    <h4>EzDiscordBot</h4>
+                    <p>Yet another Discord Bot template that you can use.</p>
+                </div>
+
+            </div>
+
+            <div class="project-card" onclick="redirect('https://github.com/ssxbaa/BrawlJS')">
+                
+                <div class="image">
+                    <img src="assets/projects_icons/github.png" class="icon" draggable="false">
+                </div>
+
+                <div class="text">
+                    <h4>BrawlJS</h4>
+                    <p>A simple Telegram Bot that interacts with the Brawl Stars API.</p>
+                </div>
+
+            </div>
+
+            <div class="project-card" onclick="redirect('https://github.com/ssxbaa/DsChatBridge')">
+                
+                <div class="image">
+                    <img src="assets/projects_icons/github.png" class="icon" draggable="false">
+                </div>
+
+                <div class="text">
+                    <h4>DsChatBridge</h4>
+                    <p>A Discord Bot that connects two or more servers' chats.</p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section id="contact">
+
+        <div class="section-title">
+
+            <h1>Want to hit me up?</h1>
+            <p>If you're reaching out to talk about a project, or even just to say hi, do it!</p>
+
+        </div>
+
+        <div class="contacts-container">
+
+            <button class="contact" onclick="redirect('https://github.com/ssxbaa')">
+                <i class="bi bi-github"></i>
+            </button>
+
+            <button class="contact" onclick="redirect('https://t.me/assegnobancario')">
+                <i class="bi bi-telegram"></i>
+            </button>
+
+            <button class="contact" onclick="redirect('https://discord.com/users/1213198625610408046')">
+                <i class="bi bi-discord"></i>
+            </button>
+
+            <button class="contact" onclick="redirect('https://fiverr.com/ssxbaathedev')">
+                <i class="bi bi-bag-fill"></i>
+            </button>
+
+        </div>
+
+    </section>
+
+    <div class="notify">
+
+        <p id="bounce">
+            Scroll to explore! <br>
+            <i class="bi bi-arrow-down"></i>
+        </p>
+
     </div>
 
-   </body>
+    <footer>
+        <div>
+            <p>
+                © <i class="bi bi-dot"></i> seba.is-a.dev <i class="bi bi-dot"></i> <script>document.write(new Date().getFullYear());</script>
+            </p>
+        </div>
+    </footer>
+    
+</body>
 
 </html>
