@@ -489,7 +489,7 @@ div.project-card > div.image {
 
 div.image > img.icon {
 
-    width: 90%;
+    width: 50px;
     border-radius: 50%;
 
 }
@@ -502,6 +502,7 @@ div.project-card > div.text {
     justify-content: center;
 
     text-align: left;
+    
 }
 
 div.project-card > div.text > h3 {
