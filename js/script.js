@@ -1,4 +1,4 @@
-import { DateTime } from "https://cdn.skypack.dev/luxon";
+import { DateTime } from "https://cdn.jsdelivr.net/npm/luxon@3.7.2/+esm";
 import "https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js";
 
 const SEBA_ID = 1213198625610408046n;
